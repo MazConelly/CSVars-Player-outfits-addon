@@ -1,0 +1,324 @@
+;======== CS-1 variants
+[cs_light_novice_outfit_mono]:cs_light_novice_outfit
+$spawn							= "outfit\cs_light_novice_outfit_mono"
+visual							= dynamics\outfit\cs_light_outfit
+actor_visual					= actors\stalker_csvars\stalker_nebo_1_mono3
+npc_visual						= actors\stalker_csvars\stalker_nebo_1_mono3
+
+inv_name						= csky_light_novice_outfit_mono
+inv_name_short					= csky_light_novice_outfit_mono
+description						= csky_light_novice_outfit_mono_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 0
+inv_grid_y						= 0
+
+community						= monolith
+
+[cs_light_novice_outfit_rene]:cs_light_novice_outfit
+$spawn							= "outfit\cs_light_novice_outfit_rene"
+visual							= dynamics\outfit\cs_light_outfit
+actor_visual					= actors\stalker_csvars\stalker_nebo_1_rene2
+npc_visual						= actors\stalker_csvars\stalker_nebo_1_rene2
+
+inv_name						= csky_light_novice_outfit_rene
+inv_name_short					= csky_light_novice_outfit_rene
+description						= csky_light_novice_outfit_rene_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 2
+inv_grid_y						= 0
+
+community						= renegade
+cost							= 30340
+inv_weight						= 5.88
+additional_inventory_weight		= 4
+additional_inventory_weight2	= 4
+
+burn_protection					= 0.1
+shock_protection				= 0.76
+radiation_protection			= 0.002
+chemical_burn_protection		= 0.027
+strike_protection				= 0.035
+explosion_protection			= 0.2
+wound_protection				= 0.28
+fire_wound_protection			= 0.19
+
+[cs_light_novice_outfit_greh]:cs_light_novice_outfit
+$spawn							= "outfit\cs_light_novice_outfit_greh"
+visual							= dynamics\outfit\cs_light_outfit
+actor_visual					= actors\stalker_csvars\stalker_nebo_1_sin
+npc_visual						= actors\stalker_csvars\stalker_nebo_1_sin
+
+inv_name						= csky_light_novice_outfit_greh
+inv_name_short					= csky_light_novice_outfit_greh
+description						= csky_light_novice_outfit_greh_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 4
+inv_grid_y						= 0
+
+community						= greh
+cost							= 30340
+inv_weight						= 4.97
+additional_inventory_weight		= 4
+additional_inventory_weight2	= 4
+immunities_sect					= sect_light_novice_outfit_greh_immunities
+
+[sect_light_novice_outfit_greh_immunities]
+burn_immunity                 = 0.30
+chemical_burn_immunity        = 0.08
+explosion_immunity            = 0.3
+fire_wound_immunity           = 0.080
+radiation_immunity            = 0.0
+shock_immunity                = 0.04
+strike_immunity               = 0.0
+telepatic_immunity            = 0.0
+wound_immunity                = 0.132
+
+
+;======== Restore the CS-1B
+[cs_scout_outfit]:outfit_base
+$spawn							= "outfit\cs_scout_outfit"
+class							= EQU_STLK
+ef_equipment_type				= 3
+visual							= dynamics\outfit\cs_light_outfit
+actor_visual					= actors\stalker_nebo\stalker_nebo_a
+npc_visual						= actors\stalker_nebo\stalker_nebo_a
+player_hud_section				= actor_hud_cs1
+character_portrait				= ui_inGame2_csky_1_2
+full_icon_name					= npc_icon_svoboda_light_outfit
+full_scale_icon					= 10, 11
+
+inv_name						= csky_scout_outfit_name
+inv_name_short					= csky_scout_outfit_name
+description						= csky_scout_outfit_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 6
+inv_grid_y						= 3
+
+upgr_icon_x						= 953
+upgr_icon_y						= 365
+upgr_icon_width					= 309
+upgr_icon_height				= 142
+
+upgrades						= up_gr_firstab_sunrise_3, up_gr_seconab_sunrise_3, up_gr_thirdab_sunrise_3
+installed_upgrades				=
+upgrade_scheme					= up_scheme_sunrise_1
+
+community						= csky
+kind							= o_light
+cost							= 42340
+inv_weight						= 7.28
+additional_inventory_weight		= 15
+additional_inventory_weight2	= 15
+artefact_count					= 2
+immunities_sect					= sect_cs_scout_outfit_immunities
+repair_type						= outfit_light
+;repair_part_bonus				= 0.17
+hit_fraction_actor				= 0.75
+bones_koeff_protection			= actor_armor_cs1
+control_inertion_factor			= 1.28
+power_loss						= 0.05
+
+burn_protection					= 0.150
+shock_protection				= 0.98
+radiation_protection			= 0.0028
+chemical_burn_protection		= 0.039
+telepatic_protection			= 0
+strike_protection				= 0.048
+explosion_protection			= 0.27
+wound_protection				= 0.33
+fire_wound_protection			= 0.26
+
+[sect_cs_scout_outfit_immunities]
+burn_immunity					= 0.26
+chemical_burn_immunity			= 0.08
+explosion_immunity				= 0.22
+fire_wound_immunity				= 0.078
+radiation_immunity				= 0.0
+shock_immunity					= 0.035
+strike_immunity					= 0.0
+telepatic_immunity				= 0.0
+wound_immunity					= 0.129
+
+; cs-1b variants
+
+; CS-1b loner, practically the same
+[cs_scout_outfit_neutral]:cs_scout_outfit
+$spawn							= "outfit\cs_scout_outfit_neutral"
+actor_visual					= actors\stalker_csvars\stalker_nebo_a_neutral
+npc_visual						= actors\stalker_csvars\stalker_nebo_a_neutral
+
+inv_name						= csky_scout_outfit_neutral
+inv_name_short					= csky_scout_outfit_neutral
+description						= csky_scout_outfit_neutral_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 8
+inv_grid_y						= 3
+
+community						= stalker
+
+; CS-1b Monolith, practically the same
+[cs_scout_outfit_mono]:cs_scout_outfit
+$spawn							= "outfit\cs_scout_outfit_mono"
+actor_visual					= actors\stalker_csvars\stalker_nebo_a_mono
+npc_visual						= actors\stalker_csvars\stalker_nebo_a_mono
+
+inv_name						= csky_scout_outfit_mono
+inv_name_short					= csky_scout_outfit_mono
+description						= csky_scout_outfit_mono_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 0
+inv_grid_y						= 3
+
+community						= monolith
+
+;======== cs1b renegade, worse
+[cs_scout_outfit_rene]:cs_scout_outfit
+$spawn							= "outfit\cs_scout_outfit_rene"
+actor_visual					= actors\stalker_csvars\stalker_nebo_a_rene
+npc_visual						= actors\stalker_csvars\stalker_nebo_a_rene
+
+inv_name						= csky_scout_outfit_rene
+inv_name_short					= csky_scout_outfit_rene
+description						= csky_scout_outfit_rene_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 2
+inv_grid_y						= 3
+
+community						= renegade
+
+cost							= 38340
+inv_weight						= 7.98
+additional_inventory_weight		= 13
+additional_inventory_weight2	= 13
+artefact_count					= 1
+; npc_blindness_koeff				= 10
+
+burn_protection					= 0.140
+shock_protection				= 0.92
+radiation_protection			= 0.0023
+chemical_burn_protection		= 0.034
+telepatic_protection			= 0
+strike_protection				= 0.041
+explosion_protection			= 0.22
+wound_protection				= 0.30
+fire_wound_protection			= 0.22
+
+; cs-1b sin, more protection, less duration
+[cs_scout_outfit_greh]:cs_scout_outfit
+$spawn							= "outfit\cs_scout_outfit_greh"
+actor_visual					= actors\stalker_csvars\stalker_nebo_a_sin
+npc_visual						= actors\stalker_csvars\stalker_nebo_a_sin
+
+inv_name						= csky_scout_outfit_greh
+inv_name_short					= csky_scout_outfit_greh
+description						= csky_scout_outfit_greh_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 4
+inv_grid_y						= 3
+
+community						= greh
+
+cost							= 40340
+inv_weight						= 6.87
+additional_inventory_weight		= 13
+additional_inventory_weight2	= 13
+artefact_count					= 2
+immunities_sect					= sect_cs_scout_greh_outfit_immunities
+
+[sect_cs_scout_greh_outfit_immunities]
+burn_immunity					= 0.36
+chemical_burn_immunity			= 0.09
+explosion_immunity				= 0.32
+fire_wound_immunity				= 0.088
+radiation_immunity				= 0.0
+shock_immunity					= 0.045
+strike_immunity					= 0.0
+telepatic_immunity				= 0.0
+wound_immunity					= 0.139
+;--------------------------------------------------------------------------
+
+;======== CS-3 variants
+[cs_heavy_outfit_mono]:cs_heavy_outfit
+$spawn							= "outfit\cs_heavy_outfit_mono"
+actor_visual					= actors\stalker_csvars\stalker_nebo_b_mono
+npc_visual						= actors\stalker_csvars\stalker_nebo_b_mono
+
+inv_name						= csky_heavy_outfit_mono
+inv_name_short					= csky_heavy_outfit_mono
+description						= csky_heavy_outfit_mono_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 0
+inv_grid_y						= 6
+
+community						= monolith
+
+[cs_heavy_outfit_rene]:cs_heavy_outfit
+$spawn							= "outfit\cs_heavy_outfit_rene"
+actor_visual					= actors\stalker_csvars\stalker_nebo_b_rene2
+npc_visual						= actors\stalker_csvars\stalker_nebo_b_rene2
+
+inv_name						= csky_heavy_outfit_rene
+inv_name_short					= csky_heavy_outfit_rene
+description						= csky_heavy_outfit_rene_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 2
+inv_grid_y						= 6
+
+community						= renegade
+cost							= 52280
+inv_weight						= 17
+additional_inventory_weight		= 14
+additional_inventory_weight2	= 14
+artefact_count					= 1
+
+burn_protection					= 0.14
+shock_protection				= 1.10
+radiation_protection			= 0.0082
+chemical_burn_protection		= 0.02
+telepatic_protection			= 0.019
+strike_protection				= 0.43
+explosion_protection			= 0.41
+wound_protection				= 0.4
+fire_wound_protection			= 0.32
+
+[cs_heavy_outfit_greh]:cs_heavy_outfit
+$spawn							= "outfit\cs_heavy_outfit_greh"
+actor_visual					= actors\stalker_csvars\stalker_nebo_b_sin
+npc_visual						= actors\stalker_csvars\stalker_nebo_b_sin
+
+inv_name						= csky_heavy_outfit_greh
+inv_name_short					= csky_heavy_outfit_greh
+description						= csky_heavy_outfit_greh_description
+
+icons_texture					= ui\ui_icon_csvars
+inv_grid_x						= 4
+inv_grid_y						= 6
+
+community						= greh
+cost							= 54280
+inv_weight						= 15
+additional_inventory_weight		= 15
+additional_inventory_weight2	= 15
+artefact_count					= 1
+immunities_sect					= sect_cs_heavy_outfit_greh_immunities
+
+[sect_cs_heavy_outfit_greh_immunities]
+burn_immunity					= 0.06
+chemical_burn_immunity			= 0.042
+explosion_immunity				= 0.15
+fire_wound_immunity				= 0.032
+radiation_immunity				= 0.0
+shock_immunity					= 0.031
+strike_immunity					= 0
+telepatic_immunity				= 0.0
+wound_immunity					= 0.032
